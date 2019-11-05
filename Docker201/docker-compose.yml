@@ -1,0 +1,24 @@
+version: '3'
+services:
+ mysql:
+  image: mysql:5.7
+  ports:
+   - "3306:3306"
+  container_name: mysql-standalone
+  network_mode: host
+  environment:
+   MYSQL_ROOT_PASSWORD: root123 
+   MYSQL_DATABASE: test
+   MYSQL_USER: test 
+   MYSQL_PASSWORD: test
+
+ spring-docker201app:
+  image: subhahar/docker201repo:docker201image
+  restart: always
+  network_mode: host
+  container_name: docker201image
+  depends_on:
+   - mysql-standalone
+  ports:
+   - "8088:8088"
+  
