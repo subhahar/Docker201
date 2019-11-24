@@ -13,10 +13,10 @@ services:
    MYSQL_PASSWORD: test
 
  spring-docker201app:
-  image: docker201image
+  image: kubdocker201image
   restart: always
   network_mode: host
-  container_name: docker201image
+  container_name: kubdocker201image
   depends_on:
    - mysql
   ports:
