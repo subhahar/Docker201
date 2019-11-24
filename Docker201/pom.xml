@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example.mindtree</groupId>
-	<artifactId>Docker201</artifactId>
+	<artifactId>kubdocker201</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Docker201</name>
+	<name>kubdocker201</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
